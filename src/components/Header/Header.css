@@ -1,0 +1,21 @@
+.Header {
+  background-color: #80977d;
+  height: 60px;
+  display: flex;
+  padding: 0 100px 0 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logo {
+  height: 60px;
+}
+
+.List > li {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 50px;
+  font-family: "Open Sans", sans-serif;
+}

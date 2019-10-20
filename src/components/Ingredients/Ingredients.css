@@ -1,0 +1,12 @@
+.Ingredients {
+  flex: 0.29;
+  background-color: #fff;
+  padding: 20px;
+  height: fit-content;
+}
+
+.IngredientsList > li {
+  list-style: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}

@@ -1,0 +1,27 @@
+.Footer {
+  background-color: #707070;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.FooterItems {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  list-style: none;
+}
+
+.FooterItems > li {
+  padding: 40px;
+}
+
+.FooterLogo {
+  height: 150px;
+}
+
+.FooterCopyright {
+  font-size: 14px;
+  padding: 20px 0 70px 0;
+  line-height: 1.7;
+}
