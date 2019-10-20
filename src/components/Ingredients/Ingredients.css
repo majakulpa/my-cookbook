@@ -5,8 +5,30 @@
   height: fit-content;
 }
 
-.IngredientsList > li {
-  list-style: none;
-  border-bottom: 1px solid #ddd;
+table {
+  display: table;
+  border-collapse: collapse;
+  border-color: #ddd;
+}
+
+td {
   padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td:nth-child(1) {
+  width: 10%;
+}
+
+td:nth-child(2) {
+  width: 20%;
+}
+
+td:nth-child(3) {
+  width: 70%;
+}
+
+tr:hover {
+  background-color: rgba(128, 152, 125, 0.22);
 }
