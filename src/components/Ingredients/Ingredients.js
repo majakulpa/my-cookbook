@@ -1,63 +1,43 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import "./Ingredients.css";
 
-const _ingredients = [
-  {
-    quantity: 1,
-    cup: "tsp",
-    name: "salt"
-  },
-  {
-    quantity: 1.5,
-    cup: "tsp",
-    name: "pepper"
-  },
-  {
-    quantity: 2,
-    cup: "l",
-    name: "water"
-  },
-  {
-    quantity: 0.5,
-    cup: "",
-    name: "Chicken"
+class Ingredients extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      ingredients: [
+        { id: 1, quantity: 1, size: "cup", name: "flour" },
+        { id: 2, quantity: 0.5, size: "tsp", name: "salt" },
+        { id: 3, quantity: 1, size: "", name: "chicken" },
+        { id: 4, quantity: 2, size: "tbs", name: "eggs" }
+      ]
+    };
   }
-];
 
-function Ingredients() {
-  const [quantity, setQuantity] = useState(0);
-  return (
-    <div className="Ingredients">
-      <h3>Ingredients</h3>
-      <table>
-        <tr>
-          <td onClick={() => setQuantity(quantity + 1)}>{quantity}</td>
-          <td>tsp</td>
-          <td>salt</td>
+  renderTableData() {
+    return this.state.ingredients.map((ingredient, index) => {
+      const { id, quantity, size, name } = ingredient; //destructuring
+      return (
+        <tr key={id}>
+          <td>{quantity}</td>
+          <td>{size}</td>
+          <td>of</td>
+          <td>{name}</td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>tbs</td>
-          <td>pepper</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td></td>
-          <td>salt</td>
-        </tr>
-        <tr>
-          <td>2.5</td>
-          <td>l</td>
-          <td>water</td>
-        </tr>
-        <tr>
-          <td>0.5</td>
-          <td></td>
-          <td>chicken</td>
-        </tr>
-      </table>
-    </div>
-  );
+      );
+    });
+  }
+
+  render() {
+    return (
+      <div className="Ingredients">
+        <h3>Ingredients</h3>
+        <table id="ingredients">
+          <tbody>{this.renderTableData()}</tbody>
+        </table>
+      </div>
+    );
+  }
 }
 
 export default Ingredients;

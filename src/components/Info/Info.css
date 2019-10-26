@@ -1,0 +1,34 @@
+.Info {
+  width: 55%;
+}
+
+.InfoExtend {
+  width: 95%;
+}
+
+.Info,
+.InfoExtend {
+  background-color: #80977d;
+  color: white;
+  margin-left: -25px;
+  margin-top: -25px;
+  padding: 25px;
+  padding-bottom: 40px;
+}
+
+.InfoTitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.InfoText {
+  font-size: 15px;
+  padding: 0 20px;
+}
+
+.SeeHide {
+  font-weight: 600;
+  float: right;
+  cursor: pointer;
+}

@@ -6,4 +6,6 @@
 
 body {
   background-color: rgba(128, 152, 125, 0.22);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
 }

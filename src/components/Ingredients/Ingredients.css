@@ -11,10 +11,13 @@ table {
   border-color: #ddd;
 }
 
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
 td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
 
 td:nth-child(1) {
@@ -27,6 +30,7 @@ td:nth-child(2) {
 
 td:nth-child(3) {
   width: 70%;
+  float: right;
 }
 
 tr:hover {

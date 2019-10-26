@@ -1,0 +1,31 @@
+.Login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Card {
+  height: 70vh;
+  width: 65vw;
+  background-color: #fff;
+  display: flex;
+}
+
+.Image,
+.Form {
+  flex: 0.5;
+}
+
+.Image {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(232, 231, 231, 0.4)
+    ),
+    url("../../img/img1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Form {
+}
