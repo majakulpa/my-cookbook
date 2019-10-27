@@ -9,10 +9,10 @@ import "./App.css";
 function App() {
   return (
     <div>
-      {/* <Header />
+      <Header />
       <Navbar />
-      <Main></Main> */}
-      <Login />
+      <Main></Main>
+      {/* <Login /> */}
       <Footer />
     </div>
   );

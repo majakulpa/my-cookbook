@@ -6,14 +6,14 @@
 }
 
 .Card {
-  height: 70vh;
-  width: 65vw;
+  height: 80vh;
+  width: 70vw;
   background-color: #fff;
   display: flex;
 }
 
 .Image,
-.Form {
+.FormCard {
   flex: 0.5;
 }
 
@@ -27,5 +27,162 @@
   background-size: cover;
 }
 
+.LogoDark {
+  width: 150px;
+  float: right;
+  padding: 15px 20px 0 0;
+}
+
+.FormContainer {
+  padding: 40px 100px;
+}
+
+.FormTitle {
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
 .Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  font-size: 13px;
+  columns: #707070;
+}
+
+.Input {
+  font-size: 20px;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  color: #707070 !important;
+  margin: 0px 0 25px 0;
+}
+
+::placeholder {
+  color: #c7c7c7;
+}
+
+.Input:hover {
+  background-color: rgba(128, 152, 125, 0.22);
+  box-shadow: 0 2px 0 #80977d;
+}
+
+.Input:focus {
+  outline: none;
+}
+
+.SubmitButton {
+  margin: 30px 0;
+  background-color: #80977d;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.SubmitButton:focus {
+  outline: none;
+}
+
+.SubmitButton:hover {
+  -webkit-animation-name: button 2s infinite;
+  animation: button 2s infinite;
+}
+
+@-webkit-keyframes button {
+  0% {
+    background-color: #80977d;
+  }
+  50% {
+    background-color: #5a6859;
+  }
+  100% {
+    background-color: #80977d;
+  }
+}
+
+/* Standard syntax */
+@keyframes button {
+  0% {
+    background-color: #80977d;
+  }
+  50% {
+    background-color: #5a6859;
+  }
+  100% {
+    background-color: #80977d;
+  }
+}
+
+.FormText {
+  font-weight: 700;
+}
+
+.FormText > a {
+  text-decoration: none;
+  color: #80977d;
+}
+
+.FormText > a:hover {
+  padding: 2px;
+  border-bottom: 2px solid #80977d;
+}
+
+.LogIn {
+  margin-top: 80px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #707070;
+  font-size: 14px;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #80977d;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
 }
