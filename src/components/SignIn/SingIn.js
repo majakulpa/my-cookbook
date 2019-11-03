@@ -1,5 +1,6 @@
 import React from "react";
 import "./../Login/Login.css";
+import "./../../access/animations.css";
 
 function SignIn() {
   return (

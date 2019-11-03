@@ -1,0 +1,41 @@
+.AddNew {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 100px;
+}
+
+.AddNew input,
+.AddNew textarea,
+.AddNew button {
+  padding: 10px;
+  color: inherit;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.AddNew textarea {
+  border: none;
+}
+
+.AddNew input:focus,
+.AddNew textarea:focus {
+  outline: 2px solid #80977d;
+}
+
+.AddNew button {
+  background: #80977d;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
+}
+
+.AddNew button:focus {
+  outline: none;
+}
+
+.AddNew button:hover {
+  -webkit-animation-name: button 2s infinite;
+  animation: button 2s infinite;
+}

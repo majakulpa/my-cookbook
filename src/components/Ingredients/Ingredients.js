@@ -32,7 +32,7 @@ class Ingredients extends Component {
     return (
       <div className="Ingredients">
         <h3>Ingredients</h3>
-        <table id="ingredients">
+        <table id="ingredients" className="IngredientsTable">
           <tbody>{this.renderTableData()}</tbody>
         </table>
       </div>

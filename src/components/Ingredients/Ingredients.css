@@ -5,34 +5,34 @@
   height: fit-content;
 }
 
-table {
+.IngredientsTable {
   display: table;
   border-collapse: collapse;
   border-color: #ddd;
 }
 
-tr {
+.IngredientsTable tr {
   border-bottom: 1px solid #ddd;
 }
 
-td {
+.IngredientsTable td {
   padding: 10px;
   text-align: left;
 }
 
-td:nth-child(1) {
+.IngredientsTable td:nth-child(1) {
   width: 10%;
 }
 
-td:nth-child(2) {
+.IngredientsTable td:nth-child(2) {
   width: 20%;
 }
 
-td:nth-child(3) {
+.IngredientsTable td:nth-child(3) {
   width: 70%;
   float: right;
 }
 
-tr:hover {
+.IngredientsTable tr:hover {
   background-color: rgba(128, 152, 125, 0.22);
 }

@@ -1,0 +1,24 @@
+@-webkit-keyframes button {
+  0% {
+    background-color: #80977d;
+  }
+  50% {
+    background-color: #5a6859;
+  }
+  100% {
+    background-color: #80977d;
+  }
+}
+
+/* Standard syntax */
+@keyframes button {
+  0% {
+    background-color: #80977d;
+  }
+  50% {
+    background-color: #5a6859;
+  }
+  100% {
+    background-color: #80977d;
+  }
+}

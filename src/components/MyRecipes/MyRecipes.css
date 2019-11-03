@@ -1,0 +1,42 @@
+.MyRecipes {
+  background: #fff;
+  margin: 30px 50px;
+}
+
+.RecipesTable th {
+  padding: 15px;
+  background: #707070;
+  color: #fff;
+}
+
+.RecipesTable tr {
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.RecipesTable td {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.RecipesTable {
+  display: table;
+  border-collapse: collapse;
+  border-color: #ddd;
+}
+
+.RecipesTable td:nth-child(1) {
+  width: 20%;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.RecipesTable td:nth-child(2) {
+  width: 80%;
+}
+
+.Link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -15,7 +15,8 @@
   padding: 12px 0;
 }
 
-.NavbarItems > li:nth-child(1) {
+.NavbarItems > li > a.active {
+  padding-bottom: 10px;
   border-bottom: 5px solid #80977d;
 }
 
